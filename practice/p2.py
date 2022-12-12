@@ -34,14 +34,26 @@ if((product1<=0) or (product2<=0) or (product3<=0) or (product4<=0) or (product5
 else: 
     totalAmount = amountforp1+amountforp2+amountforp3+amountforp4+amountforp5
     entries = {product1:100, product2:200, product3:300, product4:400, product5:500}
-    x = open("mydata.txt","a")
-    # file=x
-    print("the amount of all products",entries,file=x)
-    
-    # x.close()
-
     entries1 = {product1:amountforp1, product2:amountforp2, product3:amountforp3, product4:amountforp4, product5:amountforp5}
-    for k,v in entries.items():
-        print(k, v)
+x=open("newdata.txt","a")
+print("the amount of all products")
+x.write(str(entries))
+# x.close()
+    # x_file = open("mydatas.txt","a")
+    # print('the amount of all products'.format(entries1),file=x_file)
+    # x_file.close()
+
+    # with open("mydata.txt","a") as f:
+    #         file=f
+    #         print("the amount of all products",f)
+    
+    # f.close()
+    # f = open("mydata.txt","a+")
+    # file = f
+    # print("the amount of all products",f)
+
+    
+for k,v in entries.items():
+    print(k, v)
     print(entries1)
     print("The total amout should be paid by the user is: ", totalAmount)
