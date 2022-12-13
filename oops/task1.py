@@ -52,4 +52,6 @@ class Employee:
 
 emp = Employee("reddy",200,400000)          
 empDetails = Employee("Prasad",111,10000)
-print("Hello, %s And %s " %(emp.name,emp.salary))
+# print("Hello, %s And %s " %(emp.name,emp.salary))
+# print(f"{emp.name} and {emp.age} ")
+print("my name is{}.".format(emp.name))
